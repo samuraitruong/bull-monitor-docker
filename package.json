@@ -1,0 +1,30 @@
+{
+  "name": "bull-monitor-docker",
+  "version": "1.0.0",
+  "description": "The docker file for bull-monitor",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --experimental-specifier-resolution=node src/index.js",
+    "start": "node --experimental-specifier-resolution=node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuraitruong/bull-monitor-docker.git"
+  },
+  "keywords": [
+    "bull",
+    "bull-monitor"
+  ],
+  "author": "samuraitruong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuraitruong/bull-monitor-docker/issues"
+  },
+  "homepage": "https://github.com/samuraitruong/bull-monitor-docker#readme",
+  "dependencies": {
+    "@bull-monitor/express": "^0.21.1",
+    "bull": "^3.22.7"
+  }
+}

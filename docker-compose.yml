@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  bull-monitor:
+    #network_mode: host
+    build: .
+    image: bull-monitor
+    ports:
+      - 8080:8080
+    environment:
+      REDIS_URL: redis://localhost:6379
+      QUEUE_NAMES: aspLong
+      PROVIDER: express
