@@ -25,6 +25,13 @@
   "homepage": "https://github.com/samuraitruong/bull-monitor-docker#readme",
   "dependencies": {
     "@bull-monitor/express": "^0.21.1",
-    "bull": "^3.22.7"
+    "@bull-monitor/fastify": "^0.21.1",
+    "@bull-monitor/hapi": "^0.21.1",
+    "@bull-monitor/koa": "^0.21.1",
+    "@hapi/hapi": "^20.1.3",
+    "bull": "^3.22.7",
+    "fastify": "^3.17.0",
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0"
   }
 }
