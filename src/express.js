@@ -13,6 +13,7 @@ export default async function express(redisUrl, queueNames, port) {
     queues,
   });
   await monitor.init();
+  app.use('/ping', (req, res) => res.send('OK'));
   app.use('/', monitor.router);
   app.listen(port, () => {
     console.log('Server running at http://localhost:' + port);
