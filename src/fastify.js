@@ -15,6 +15,13 @@ export default async function withFastify(redisUrl, queueNames, port) {
   await monitor.init();
   await app.register(monitor.plugin);
 
+  app.route({
+    method: 'get',
+    url: '/ping',
+    handler: (request, reply) => {
+      reply.send('OK');
+    },
+  });
   app.listen(port, () => {
     console.log('Server running at http://localhost:' + port);
   });
